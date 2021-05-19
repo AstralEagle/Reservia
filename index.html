@@ -10,15 +10,15 @@
     <header>
         <img src="img/logo/Reservia.svg" alt="logo">
         <div id="ancrage">
-            <a href="#">Hébergement</a>
-            <a href="#">Activité</a>
+            <a href="#searchHeberg">Hébergement</a>
+            <a href="#searchActiviti">Activité</a>
         </div>
         <a href="#">S'incrire</a>
     </header>
     <nav>
         <h1>Trouver votre hébergement pour des vacances de rêve</h1>
         <h3>En plein centre ville ou en pleine nature</h3>
-        <form action="post">
+        <form action="">
             <i class="fas fa-map-marker-alt fa-lg"></i>
             <input type="text" placeholder="Marseille,France" name="location">
             <input type="submit" id="butSearch" value="Rechercher">
@@ -62,8 +62,8 @@
             Plus de 500 logement sont disponible dans cette ville
         </h3>
     </nav>
-    <div>
-        <section>
+    <div id="mainSection" >
+        <section id="searchPopu">
             <h1>Les plus populaires<i class="fas fa-chart-line fa-lg fa-fw fa-pull-right"></i></h1>
             <article>
                 <a href="#">
@@ -98,69 +98,69 @@
                 </a>
             </article>
         </section>
-        <section>
+        <section id="searchHeberg">
             <h1>Hébergement à Marseille</h1>
             <article>
-                <div>
+                <a>
                     <img src="img/heberg/cherch1.jpg" alt="habita">
                     <h2>Auberge la Cannebière</h2>
                     <h3>Nuit a partir de 25</h3>
                     <div>
                         <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                     </div>
-                </div>
-                <div>
+                </a>
+                <a>
                     <img src="img/heberg/cherch2.jpg" alt="habita">
                     <h2>Hôtel du sport</h2>
                     <h3>Nuit a partir de 52</h3>
                     <div>
                         <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                     </div>
-                </div>
-                <div>
+                </a>
+                <a>
                     <img src="img/heberg/cherch3.jpg" alt="habita">
                     <h2>Hôtel Les mouettes</h2>
                     <h3>Nuit a partir de 76</h3>
                     <div>
                         <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                     </div>
-                </div>
-                <div>
+                </a>
+                <a>
                     <img src="img/heberg/cherch4.jpg" alt="habita">
                     <h2>Hôtel de la mer</h2>
                     <h3>Nuit a partir de 46</h3>
                     <div>
                         <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                     </div>
-                </div>
-                <div>
+                </a>
+                <a>
                     <img src="img/heberg/cherch5.jpg" alt="habita">
                     <h2>Auberge Le Panier</h2>
                     <h3>Nuit a partir de 23</h3>
                     <div>
                         <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                     </div>
-                </div>
-                <div>
+                </a>
+                <a>
                     <img src="img/heberg/cherch6.jpg" alt="habita">
                     <h2>Hôtel chez Amina</h2>
                     <h3>Nuit a partir de 96</h3>
                     <div>
                         <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                     </div>
-                </div>
+                </a>
             </article>
             <h2>Afficher plus</h2>
         </section>
     </div>
-    <section>
+    <section id="searchActiviti">
         <h1>Activités à Marseille</h1>
         <article>
-            <div>
+            <div class="activitiLong">
                 <img src="img/activ/activ1.jpg" alt="activitie">
                 <h2>Vieux Port</h2>
             </div>
-            <div>
+            <div class="activitiLong">
                 <div>
                     <img src="img/activ/activ2.jpg" alt="activitie">
                     <h2>Fort de Pomègues</h2>
@@ -170,11 +170,11 @@
                     <h2>Îles du Frioul</h2>
                 </div>
             </div>
-            <div>
+            <div class="activitiLong">
                 <img src="img/activ/activ4.jpg" alt="activitie">
                 <h2>Parc National des Calanques</h2>
             </div>
-            <div>
+            <div class="activitiLong">
                 <div>
                     <img src="img/activ/activ5.jpg" alt="activitie">
                     <h2>Notre-Dame-de-la-Garde</h2>

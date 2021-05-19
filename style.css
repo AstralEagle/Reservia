@@ -1,0 +1,95 @@
+@font-face {
+    font-family: 'Raleway' ;
+    src: url('police/Raleway-VariableFont_wght.ttf');
+}
+body{
+    font-family: 'Raleway', sans-serif;
+    margin: 10px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+h1{
+    font-size: 20px;
+}
+h2{
+    font-size: 15px;
+}
+h3{
+    font-size: 10px;
+}
+
+
+
+
+#mainSection{
+    display: flex;
+    flex-direction: row-reverse;
+}
+#mainSection section{
+    margin: 10px;
+    background-color: #F2F2F2;
+    border-radius: 10px;
+}
+#searchPopu{
+    flex: 1;
+}
+#searchPopu a{
+    display: flex;
+    border-radius: 10px;
+}
+#searchPopu img{
+    height: 110px;
+    width: 100px;
+    background-size: cover;
+}
+#searchHeberg{
+    flex: 3;
+}
+#searchHeberg  article{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#searchHeberg  article a{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 200px;
+}
+#searchHeberg  article a img{
+    width: 240px;
+    height: 100px;
+}
+#searchActiviti article{
+    display: flex;
+
+}
+.activitiLong{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 600px;
+    margin: 2px;
+}
+.activitiLong div{
+    flex: 1;
+    height: 50%;
+    margin: 1px;
+}
+.activitiLong img{
+    width: 100%;
+    height: 95%;
+}
+.activitiLong div img{
+    width: 100%;
+    height: 85%;
+}
+footer{
+    display: flex;   
+}
+footer div{
+    flex: 1;
+}
+
