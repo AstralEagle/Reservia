@@ -49,14 +49,17 @@ header, nav,#mainSection,#searchActiviti{
 /*------- Block du head ---------*/
 header{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 header img{
     object-fit: none;
+    width: 100px;
+    height: 50px;
 }
 header a{
     color: #0065FC;
-    padding-top: 40px;
+    padding-top: 20px;
     padding-left: 20px;
     padding-right: 20px;
     font-weight: bold;
@@ -245,3 +248,34 @@ footer div{
     flex: 1;
 }
 
+
+
+/*------------------MOBILE STYLE------------*/
+header{
+    flex-direction: column;
+    justify-content: flex-start;
+}
+#inscription{
+    position:absolute;
+    top: 0px;
+    right: 5px;
+}
+#ancrage{
+    width: 100%;
+    display:flex;
+}
+#ancrage a{
+    flex: 1;
+    width:50%;
+    text-align: center;
+    border-top: #F2F2F2 2px solid;
+}
+#filtreList{
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+ul{
+    margin: 20px;
+    flex-wrap: wrap;
+}
