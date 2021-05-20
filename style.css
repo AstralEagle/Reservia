@@ -300,6 +300,7 @@ footer div{
     }
     #ancrage a:hover{
         border-bottom: #0065FC 2px solid;
+        border-top: none;
 
     }
     /*------- Filtre ---------*/
