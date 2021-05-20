@@ -1,12 +1,7 @@
-@font-face {
-    font-family: 'Raleway' ;
-    src: url('police/Raleway-VariableFont_wght.ttf');
-}
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;700&display=swap');
 body{
     font-family: 'Raleway', sans-serif;
     margin: 0px;
-    margin-left: 10px;
-    margin-right: 10px;
 }
 a{
     text-decoration: none;
@@ -17,25 +12,19 @@ h1{
     margin-left: 10px;
 }
 h2{
-    font-size: 15px;
+    font-size: 16px;
     margin-left: 10px;
 }
 h3{
-    font-size: 10px;
+    font-size: 14px;
+    font-weight: normal;
     margin-left: 10px;
 }
 ul{
     display: flex;
 }
-.imgInfo{
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.imgInfo img{
-    height: 150%;
-    width: 150%;
+img{
+    object-fit: cover;
 }
 .colorOne{
     color:  #0065FC;
@@ -47,15 +36,23 @@ ul{
     color: #F2F2F2;  
 }
 .notation{
-    margin-left: 10px;
+    margin: 5px;
 }
 
 
 
-/*------- Block de l'entête ---------*/
+/*------- Marging de la page ---------*/
+header, nav,#mainSection,#searchActiviti{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+/*------- Block du head ---------*/
 header{
     display: flex;
     justify-content: space-between;
+}
+header img{
+    object-fit: none;
 }
 header a{
     color: #0065FC;
@@ -74,6 +71,7 @@ header div{
     border-top: #0065FC 2px solid;
 }
 /*------- Block de la recherche ---------*/
+
 form{
     display: flex;
     height: 40px;
@@ -125,37 +123,45 @@ li:hover{
     flex-direction: row-reverse;
 }
 #mainSection section{
-    margin: 25px;
+    margin: 15px;
     background-color: #F2F2F2;
     border-radius: 10px;
 }
+#mainSection  a h2{
+    font-size: 14px;
+    margin: 5px;
+}
+#mainSection  a h3{
+    font-size: 12px;
+    margin: 5px;
+}
 /*------- Section des populaires ---------*/
 #searchPopu{
-    flex: 2;
+    flex: 5;
     padding: 5px;
 }
 #searchPopu article{
     height: 80%;
+    padding: 0px;
+    margin-top:50px;
+
 }
 #searchPopu a{
     display: flex;
     padding: 5px;
-    margin: 20px;
-    height: 150px;
-
+    margin: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    height: 100px;
     border-radius: 10px;
     background-color: white;
 }
-#searchPopu .imgInfo{
+#searchPopu img{
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     height: 100%;
-    width: 100px;
-    min-width: 150px;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 50px;
+    min-width: 80px;
 }
 #searchPopu .descInfo{
     display: flex;
@@ -164,62 +170,71 @@ li:hover{
 }
 /*------- Section de la recherche ---------*/
 #searchHeberg{
-    flex: 6;
+    flex: 12;
 }
 #searchHeberg  article{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
+
 }
 #searchHeberg  article a{
     display: flex;
     flex-direction: column;
-    width: 250px;
-    height: 200px;
-    margin: 25px;
+    width: 30%;
+    height: 160px;
+    max-height: 300px;
+    margin: 0.84%;
     padding: 5px;
     border-radius: 15px;
     background-color: white;
 }
 #searchHeberg  article a img{
     width: 100%;
-    height: 100px;
+    height: 85px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+}
+#searchHeberg  article .descInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 /*------- Section des activitées ---------*/
 #searchActiviti article{
     display: flex;
 }
+#searchActiviti a{
+    display: block;
+    border-radius: 10px;
+    box-shadow: #F2F2F2 2px 0px 10px;
+}
 .activitiLong{
     display: flex;
     flex-direction: column;
     width: 25%;
-    height: 600px;
+    height: 400px;
     margin: 20px;
 }
-.activitiLong div{
+.activHaut,.activBas{
     flex: 1;
     height: 45%;
 }
-.activitiLong .imgInfo{
+.activitiLong img{
     width: 100%;
-    height: 95%;
+    height: 87%;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
-.activitiLong div .imgInfo{
-    height: 85%;
-}
-.activ{
-    border-radius: 10px;
-    box-shadow: #F2F2F2 2px 0px 10px;
+.activHaut img ,.activBas img{
+    height: 76%;
 }
 .activHaut{
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 .activBas{
-    margin-top: 20px;
+    margin-top: 5px;
 }
 /*------- Block du footer ---------*/
 footer{
