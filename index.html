@@ -23,11 +23,16 @@
         <h1>Trouver votre hébergement pour des vacances de rêve</h1>
         <h3>En plein centre ville ou en pleine nature</h3>
         <form action="index.html">
-            <span class="fa-stack fa-fw">
-                <i class="fas fa-map-marker-alt fa-fw"></i>
-            </span>
+            <div>                
+                <span class="fa-stack fa-fw">
+                    <i class="fas fa-map-marker-alt fa-fw"></i>
+                </span>
                 <input type="text" placeholder="Marseille,France" name="location">
-            <input type="submit" id="butSearch" value="Rechercher">
+                <input type="submit" id="butSearch" value="Rechercher">
+                <button type="submit" id="iconSearch">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
         </form>
         <div id="filtreList">
             <h2>Filtres</h2>
@@ -62,13 +67,15 @@
                 </li>
             </ul>
         </div>
-        <h3>
+        <div id="filtreInfo">            
             <span class="fa-stack">
                 <i class="far fa-circle fa-stack-2x colorTwo"></i>
                 <i class="fas fa-info fa-stack-1x colorOne"></i>
             </span>
-            Plus de 500 logement sont disponible dans cette ville
-        </h3>
+            <h3>
+                Plus de 500 logement sont disponible dans cette ville
+            </h3>
+        </div>
     </nav>
     <div id="mainSection" >
         <section id="searchPopu">
