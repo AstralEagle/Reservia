@@ -228,7 +228,7 @@ li:hover{
     flex-direction: column;
     justify-content: center;
 }
-/*------- Section des activitées ---------*/
+/*------- Section des activitÃ©es ---------*/
 #searchActiviti article{
     display: flex;
 }
@@ -276,8 +276,39 @@ footer div{
 
 
 
+@media(max-width: 1024px){
+    #filtreList{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    ul{
+        flex-wrap: wrap;
+
+    }
+    #mainSection{
+        flex-direction: column;
+    }
+    #mainSection article{
+        flex-direction: row;
+    }
+    li{
+        margin-left: 0px;
+        margin-right: 20px;
+    }
+    #searchPopu article{
+        flex-direction: row;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    #searchPopu article a{
+        width: 30%;
+        min-width: 215px;
+        margin: 0px;
+    }
+}
 /*------------------MOBILE STYLE------------*/
-@media(max-width: 425px){
+@media(max-width: 764px){
     /*------- Header ---------*/
     header{
         flex-direction: column;
@@ -337,10 +368,19 @@ footer div{
         flex: none;
         margin: 20px;
     }
+    #searchPopu article{
+        flex-direction: column;
+    }
+    #searchPopu article a{
+        width: auto;
+        margin: 10px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
     #searchPopu img{
         min-width: 120px;
     }
-    /*------- Héberge ---------*/
+    /*------- HÃ©berge ---------*/
     div #searchHeberg{
         background: white;
     }
