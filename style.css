@@ -312,7 +312,7 @@ footer div{
 
 
 /*------------------MOBILE STYLE------------*/
-@media(max-width: 764px){
+@media(max-width: 790px){
     /*------- Header ---------*/
     header{
         flex-direction: column;
